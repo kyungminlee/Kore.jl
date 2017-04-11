@@ -11,5 +11,6 @@ export flatten
 export chopzero, chopzero!
 export funcplus, functimes
 export linpath
+export within
 
 end
