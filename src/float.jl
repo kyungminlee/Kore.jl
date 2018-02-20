@@ -5,7 +5,7 @@ function chopzero!{T<:Real,D}(arr ::Array{Complex{T},D};
     if isapprox(real(arr[i]), 0; atol=tol)
       arr[i] = 1im * imag(arr[i])
     end
-    if isapprox(imag(arr[i]), 0, rtol, atol)
+    if isapprox(imag(arr[i]), 0; atol=tol)
       arr[i] = real(arr[i])
     end
   end
